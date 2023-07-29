@@ -4,6 +4,8 @@ class LearningScreen extends StatelessWidget {
   // Define the top text as a const variable
   static const String topText = '1. 저 지금 점심 먹으러 나갈까 하는데, 같이 가실래요?';
 
+  const LearningScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,7 +15,7 @@ class LearningScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const SizedBox(height: 64.0),
-            Text(
+            const Text(
               topText,
               style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
             ),
@@ -34,7 +36,8 @@ class LearningScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 16.0), // Adding spacing between the two buttons
+            const SizedBox(
+                height: 16.0), // Adding spacing between the two buttons
             SizedBox(
               width: 200.0,
               child: ElevatedButton(
