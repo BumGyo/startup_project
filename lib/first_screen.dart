@@ -27,7 +27,7 @@ class FirstScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (BuildContext context) => const LearningScreen(),
+                      builder: (BuildContext context) => LearningScreen(),
                     ),
                   );
                 },
